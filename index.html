@@ -1,13 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="src\output.css" rel="stylesheet" />
+    <link href="src\build.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
     </style>
+
+    <script>
+      if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
     <title>Mosa's Portfolio</title>
   </head>
   <body>
@@ -17,30 +25,45 @@
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
-            <a href="#home" class="font-bold text-lg text-primary block py-6">zmkalila</a>
+            <a href="#home" class="font-bold text-lg text-primary block py-6 dark:text-white">zmkalila</a>
           </div>
           <div class="flex items-center px-4">
             <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-top-left bg-slate-600 dark:bg-white"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out bg-slate-600 dark:bg-white"></span>
+              <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left bg-slate-600 dark:bg-white"></span>
             </button>
-            <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-darkmode dark:shadow-slate-800 lg:dark:bg-transparent"
+            >
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Home</a>
+                  <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">About me</a>
+                  <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About me</a>
                 </li>
                 <li class="group">
-                  <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                  <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
                 </li>
                 <li class="group">
-                  <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
+                  <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                  <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
+                </li>
+                <li class="mt-4 lg:mt-0 flex items-center pl-8">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      </div>
+                    </label>
+                    <span class="ml-4 text-sm text-slate-500">dark</span>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -52,24 +75,24 @@
 
     <!-- Hero Section Start -->
 
-    <section id="home" class="pt-24">
+    <section id="home" class="pt-24 dark:bg-darkmode">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <div class="coba">
-              <h1 class="text-base font-semibold md:text-xl text inline-block text-primary intro1"></h1>
+              <h1 class="text-base font-semibold md:text-xl text inline-block text-primary intro1 dark:text-white"></h1>
             </div>
             <div class="coba2">
               <h1 class="font-bold text-4xl mt-1 lg:text-5xl text2 inline-block text-primary intro2"></h1>
             </div>
             <div>
-              <p class="font-medium text-slate-400 mb-6 leading-relaxed inline-block intro3"></p>
+              <p class="font-medium text-slate-400 mb-6 leading-relaxed inline-block intro3 dark:text-white"></p>
             </div>
             <div>
-              <h2 class="font-medium text-slate-600 text-lg mb-1 lg:text-2xl inline-block intro4"></h2>
+              <h2 class="font-medium text-slate-600 text-lg mb-1 lg:text-2xl inline-block intro4 dark:text-white"></h2>
             </div>
             <div>
-              <h2 class="font-medium text-slate-600 text-lg mb-12 lg:text-2xl inline-block intro5"></h2>
+              <h2 class="font-medium text-slate-600 text-lg mb-12 lg:text-2xl inline-block intro5 dark:text-white"></h2>
             </div>
 
             <a
@@ -81,8 +104,8 @@
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="relative mt-2 lg:mt-2 lg:right-0">
-              <img src="img/Mosa_3.png" alt="Foto" class="max-w-full mx-auto img-thumbnail" />
-              <span class="absolute -z-10 bottom-1 left-[50%] -translate-x-1/2 md:scale-110">
+              <img src="img/Mosa_3.png" alt="Foto" class="max-w-full mx-auto img-thumbnail relative z-10" />
+              <span class="absolute bottom-1 left-[50%] -translate-x-1/2 md:scale-110">
                 <svg width="325" height="325" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill="#cbd5e1"
@@ -100,24 +123,24 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-40 pb-20">
+    <section id="about" class="pt-40 pb-20 dark:bg-darkmode">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-offset="100">
             <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
-            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">Language Learner ✨</h2>
-            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg mb-5">I'm keen on learning languages,<br />ranging from programming to foreign languages.</p>
-            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Programming Languages:</p>
-            <p class="mb-4 text-dark max-w-xl lg:text-lg font-bold">Python, HTML, CSS, MySQL.</p>
-            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Foreign Languages:</p>
-            <p class="text-dark max-w-xl lg:text-lg font-bold">
-              Indonesian, English <span class="text-dark max-w-xl lg:text-lg font-light">(Upper Intermediate)</span>, Korean <span class="text-dark max-w-xl lg:text-lg font-light">(Beginner)</span>.
+            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white">Language Learner ✨</h2>
+            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg mb-5 dark:text-white">I'm keen on learning languages,<br />ranging from programming to foreign languages.</p>
+            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg dark:text-white">Programming Languages:</p>
+            <p class="mb-4 text-dark max-w-xl lg:text-lg font-bold dark:text-white">Python, HTML, CSS, MySQL.</p>
+            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg dark:text-white">Foreign Languages:</p>
+            <p class="text-dark max-w-xl lg:text-lg font-bold dark:text-white">
+              Indonesian, English <span class="text-dark max-w-xl lg:text-lg font-light dark:text-white">(Upper Intermediate)</span>, Korean <span class="text-dark max-w-xl lg:text-lg font-light dark:text-white">(Beginner)</span>.
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-offset="100">
-            <h3 class="font-medium text-dark text-3xl mb-4 lg:text-3xl lg:pt-10">Let's connect!</h3>
-            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Below are the links to my Github, Kaggle, and LinkedIn account.</p>
-            <div class="flex items-center">
+            <h3 class="font-medium text-dark text-3xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Let's connect!</h3>
+            <p class="font-medium text-base text-secondary mb-6 lg:text-lg dark:text-white">Below are the links to my Github, Kaggle, and LinkedIn account.</p>
+            <div class="flex items-center dark:text-white">
               <!-- Github -->
               <a href="https://github.com/zmkalila" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -207,16 +230,18 @@
     </section> -->
     <!-- Portfolio Section End -->
 
-    <section id="portfolio" class="pt-28 pb-28 bg-slate-200">
+    <section id="portfolio" class="pt-28 pb-28 bg-slate-200 dark:bg-slate-900">
       <div class="w-full px-4">
         <div class="max-w-3xl mx-auto text-center mb-20">
           <h4 class="font-semibold text-lg text-primary mb-2 porto">Portfolio</h4>
-          <h2 class="font-bold text-dark text-4xl mb-4 portoo">Current Projects</h2>
-          <p class="font-medium text-md text-slate-700 portooo max-2xl">You can access the programming projects—varying from Data Science to Machine Learning—that I have previously worked on by clicking on each card below.</p>
+          <h2 class="font-bold text-dark text-4xl mb-4 portoo dark:text-white">Current Projects</h2>
+          <p class="font-medium text-md text-slate-700 portooo max-2xl dark:text-white">
+            You can access the programming projects—varying from Data Science to Machine Learning—that I have previously worked on by clicking on each card below.
+          </p>
         </div>
       </div>
       <div class="container mx-auto px-10 sm:flex sm:flex-wrap sm:gap-x-10 sm:gap-y-14 sm:justify-center">
-        <div class="rounded-xl shadow-lg overflow-hidden mt-8 sm:mt-0 sm:w-64 md:w-64 lg:w-72 xl:w-96 bg-white hover:shadow-2xl hover:scale-105 transition duration-500 ease-in-out">
+        <div class="rounded-xl shadow-lg overflow-hidden mt-8 sm:mt-0 sm:w-64 md:w-64 lg:w-72 xl:w-96 bg-white dark:text-white hover:shadow-2xl hover:scale-105 transition duration-500 ease-in-out">
           <a href="https://zmkalila.github.io/landing-page-bootstrap-v5.0/" target="_blank">
             <img src="img/portfolio/1.jpg" alt="Stranger Things" class="w-full inline-block" />
             <div class="px-6 py-4">
@@ -258,7 +283,7 @@
             </div>
           </a>
         </div>
-        <div class="rounded-xl shadow-lg overflow-hidden mt-8 sm:mt-0 sm:w-64 md:w-64 lg:w-72 xl:w-96 bg-white hover:shadow-2xl hover:scale-105 transition duration-500 ease-in-out">
+        <div class="rounded-xl shadow-lg overflow-hidden mt-8 sm:mt-0 sm:w-64 md:w-64 lg:w-72 xl:w-96 bg-white dark:text-white hover:shadow-2xl hover:scale-105 transition duration-500 ease-in-out">
           <a href="https://github.com/zmkalila" target="_blank">
             <img src="img/portfolio/lock.jpg" alt="Illustration" class="w-full inline-block" />
             <div class="px-6 py-4">
@@ -272,13 +297,13 @@
     </section>
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pt-24 pb-24">
+    <section id="contact" class="pt-24 pb-24 dark:bg-darkmode">
       <div class="container">
         <div class="w-full px-4 lg:mx-auto">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">For further info, collaboration/job offer...</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Contact me</h2>
-            <p class="font-medium text-sm text-secondary md:text-sm">(Yes, I can read the messages that you send here)</p>
+            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Contact me</h2>
+            <p class="font-medium text-sm text-secondary md:text-sm dark:text-white">(Yes, I can read the messages that you send here)</p>
           </div>
         </div>
         <form name="portfolio-contact-form">
@@ -324,7 +349,7 @@
     <!-- Contact Section End -->
 
     <!-- Footer Start -->
-    <footer class="bg-slate-600 pt-24 pb-8">
+    <footer class="bg-slate-600 pt-24 pb-8 dark:bg-slate-900">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-12 font-medium md:w-1/3 lg:w-1/3">
@@ -414,6 +439,12 @@
       </div>
     </footer>
     <!-- Footer End -->
+
+    <!-- Back to Top Start -->
+    <a href="#home" class="h-12 w-12 bg-primary block rounded-full fixed z-[9999] bottom-5 right-5 p-4 justify-center items-center hover:animate-pulse hidden" id="to-top">
+      <span class="block h-4 w-4 border-t-2 border-l-2 rotate-45 mt-2"></span>
+    </a>
+    <!-- Back to Top End -->
 
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
