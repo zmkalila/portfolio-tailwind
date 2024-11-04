@@ -12,16 +12,16 @@
     <script>
       document.documentElement.classList.toggle("dark", localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches));
     </script>
-    <title>Mosa's Portfolio</title>
+    <title>Mosa | Portfolio</title>
   </head>
   <body>
     <!-- items-center utk center vertically, justify-center utk center horizontally -->
     <!-- Header Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="bg-secondary dark:bg-darkmode bg-opacity-75 dark:bg-opacity-75 absolute top-0 left-0 w-full flex items-center z-10">
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
-            <a href="#home" class="font-bold text-lg text-primary block py-6 dark:text-white">zmkalila</a>
+            <a href="#home" class="font-bold text-lg text-black block py-6 dark:text-white">zmkalila</a>
           </div>
           <div class="flex items-center px-4">
             <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -35,30 +35,47 @@
             >
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Home</a>
+                  <a href="#home" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">About me</a>
+                  <a href="#about" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">About me</a>
                 </li>
                 <li class="group">
-                  <a href="#portfolio" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Portfolio</a>
+                  <a href="#portfolio" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">Portfolio</a>
                 </li>
                 <li class="group">
-                  <a href="#blog" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Blog</a>
+                  <a href="#blog" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">Blog</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
+                  <a href="#contact" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">Contact</a>
                 </li>
                 <li class="mt-4 lg:mt-0 flex items-center pl-8">
                   <div class="flex">
-                    <span class="mr-2 text-sm text-slate-500">light</span>
+                    <span class="w-5 h-5 mr-3 rounded-full flex dark:text-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 fill-current">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                        />
+                      </svg>
+                    </span>
+
                     <input type="checkbox" class="hidden" id="dark-toggle" />
                     <label for="dark-toggle">
-                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                      <div class="flex h-5 w-11 cursor-pointer items-center rounded-full ring-2 ring-slate-400 dark:ring-slate-300 bg-yellow-500 dark:bg-sky-400 p-1">
+                        <div class="toggle-circle h-[18px] w-5 rounded-full bg-white shadow-2xl shadow-black transition duration-300 ease-in-out"></div>
                       </div>
                     </label>
-                    <span class="ml-4 text-sm text-slate-500">dark</span>
+                    <span class="w-5 h-5 ml-4 rounded-full flex dark:text-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+                        />
+                      </svg>
+                    </span>
                   </div>
                 </li>
               </ul>
@@ -70,32 +87,31 @@
     <!-- Header End -->
 
     <!-- Hero Section Start -->
-
-    <section id="home" class="pt-24 dark:bg-darkmode">
+    <section id="home" class="pt-24 dark:bg-darkmode pb-24 puzzle">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <div class="coba">
-              <h1 class="text-base font-semibold md:text-xl text inline-block text-primary intro1 dark:text-white"></h1>
+              <h1 class="text-base font-semibold md:text-xl text inline-block bg-primary dark:bg-darkmode text-white intro1 dark:text-white"></h1>
             </div>
             <div class="coba2">
-              <h1 class="font-bold text-4xl mt-1 lg:text-5xl text2 inline-block text-primary intro2"></h1>
+              <h1 class="font-bold text-4xl mt-1 lg:text-5xl text2 inline-block text-white dark:text-primarydark intro2"></h1>
             </div>
             <div>
-              <p class="font-medium text-slate-400 mb-6 leading-relaxed inline-block intro3 dark:text-white"></p>
+              <p class="font-light text-white mb-6 leading-relaxed inline-block intro3 bg-primary dark:bg-darkmode dark:text-white"></p>
             </div>
             <div>
-              <h2 class="font-medium text-slate-600 text-lg mb-1 lg:text-2xl inline-block intro4 dark:text-white"></h2>
+              <h2 class="font-medium text-white text-lg mb-1 lg:text-2xl inline-block intro4 bg-primary dark:bg-darkmode dark:text-white"></h2>
             </div>
             <div>
-              <h2 class="font-medium text-slate-600 text-lg mb-12 lg:text-2xl inline-block intro5 dark:text-white"></h2>
+              <h2 class="font-medium text-white text-lg mb-12 lg:text-2xl inline-block intro5 bg-primary dark:bg-darkmode dark:text-white"></h2>
             </div>
 
             <a
-              href="https://www.linkedin.com/in/zayna-mosa-kalila-tf13320045"
+              href="https://drive.google.com/file/d/1F-CA-y4YajTOwe9-pVUaVlYPnRclD-MK/view?usp=drive_link"
               target="_blank"
-              class="text-base font-semibold inline-block text-white bg-primary py-3 px-3 rounded-full hover:shadow-lg hover:opacity-70 transition duration-300 ease-in-out connect"
-              >Connect with me!</a
+              class="text-base lg:text-lg font-semibold inline-block text-black bg-secondary dark:bg-secondarydark py-3 px-3 rounded-full shadow-2xl dark:shadow-2xl hover:opacity-70 transition duration-300 ease-in-out connect"
+              >Take a look at my CV</a
             >
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
@@ -119,26 +135,32 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-40 pb-20 dark:bg-darkmode">
+    <section id="about" class="pt-20 pb-20 dark:bg-darkmode">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-offset="100">
-            <h4 class="font-bold uppercase text-primary text-lg mb-3">About Me</h4>
+            <h4 class="font-bold uppercase text-dark dark:text-tertiarydark text-lg mb-3">About Me</h4>
             <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl dark:text-white">Language Learner ✨</h2>
-            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg mb-5 dark:text-white">I'm keen on learning languages,<br />ranging from programming to foreign languages.</p>
-            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg dark:text-white">Programming Languages:</p>
-            <p class="mb-4 text-dark max-w-xl lg:text-lg font-bold dark:text-white">Python, HTML, CSS, MySQL.</p>
-            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg dark:text-white">Foreign Languages:</p>
-            <p class="text-dark max-w-xl lg:text-lg font-bold dark:text-white">
-              Indonesian, English <span class="text-dark max-w-xl lg:text-lg font-light dark:text-white">(Upper Intermediate)</span>, Korean <span class="text-dark max-w-xl lg:text-lg font-light dark:text-white">(Beginner)</span>.
+            <p class="font-medium text-base text-dark max-w-xl lg:text-lg mb-5 dark:text-white">I'm keen on learning languages,<br />ranging from programming to foreign languages.</p>
+            <p class="font-medium text-base text-dark max-w-xl lg:text-lg dark:text-white">Programming Languages:</p>
+            <p class="mb-4 text-dark max-w-xl lg:text-lg font-bold bg-secondary dark:text-black dark:bg-primarydark py-1 px-1 rounded-sm inline-block">Python, HTML, CSS, MySQL.</p>
+            <p class="font-medium text-base text-dark max-w-xl lg:text-lg dark:text-white">Foreign Languages:</p>
+            <p class="text-dark max-w-xl lg:text-lg font-bold bg-secondary dark:text-black dark:bg-primarydark py-1 px-1 rounded-sm inline-block">
+              Indonesian, English <span class="text-dark max-w-xl lg:text-lg font-light dark:text-black">(Upper Intermediate)</span>,
+              <a href="https://drive.google.com/file/d/1epXd6nB9STgY4NLdpg8uguYbgzBxFwfx/view" target="_blank" class="hover:underline">Korean <span class="text-dark max-w-xl lg:text-lg font-light dark:text-black">(Beginner)</span></a
+              >.
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out" data-aos-offset="100">
             <h3 class="font-medium text-dark text-3xl mb-4 lg:text-3xl lg:pt-10 dark:text-white">Let's connect!</h3>
-            <p class="font-medium text-base text-secondary mb-6 lg:text-lg dark:text-white">Below are the links to my Github, Kaggle, and LinkedIn account.</p>
+            <p class="font-medium text-base text-dark mb-6 lg:text-lg dark:text-white">Below are the links to my Github, Kaggle, and LinkedIn account.</p>
             <div class="flex items-center dark:text-white">
               <!-- Github -->
-              <a href="https://github.com/zmkalila" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <a
+                href="https://github.com/zmkalila"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:bg-primary hover:border-primary hover:text-white dark:hover:bg-secondarydark dark:hover:border-secondarydark dark:hover:text-black"
+              >
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>GitHub</title>
                   <path
@@ -147,7 +169,11 @@
                 </svg>
               </a>
               <!-- Kaggle -->
-              <a href="https://kaggle.com/zmkalila" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+              <a
+                href="https://kaggle.com/zmkalila"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:bg-primary hover:border-primary hover:text-white dark:hover:bg-secondarydark dark:hover:border-secondarydark dark:hover:text-black"
+              >
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Kaggle</title>
                   <path
@@ -159,7 +185,7 @@
               <a
                 href="https://www.linkedin.com/in/zayna-mosa-kalila-tf13320045"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:bg-primary hover:border-primary hover:text-white dark:hover:bg-secondarydark dark:hover:border-secondarydark dark:hover:text-black"
               >
                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>LinkedIn</title>
@@ -229,9 +255,9 @@
     <section id="portfolio" class="pt-28 pb-28 bg-slate-200 dark:bg-slate-900">
       <div class="w-full px-4">
         <div class="max-w-3xl mx-auto text-center mb-20">
-          <h4 class="font-semibold text-lg text-primary mb-2 porto">Portfolio</h4>
-          <h2 class="font-bold text-dark text-4xl mb-4 portoo dark:text-white">Current Projects</h2>
-          <p class="font-medium text-md text-slate-700 portooo max-2xl dark:text-white">
+          <h4 class="font-semibold text-lg text-dark dark:text-white mb-2 porto">Portfolio</h4>
+          <h2 class="font-bold text-primary text-4xl mb-4 portoo dark:text-primarydark">Current Projects</h2>
+          <p class="font-medium text-md text-dark portooo lg:max-w-4xl dark:text-white">
             You can access the programming projects—varying from Data Science to Machine Learning—that I have previously worked on by clicking on each card below.
           </p>
         </div>
@@ -297,27 +323,27 @@
       <div class="container">
         <div class="w-full px-4 lg:mx-auto">
           <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-lg text-primary mb-2">For further info, collaboration/job offer...</h4>
-            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Contact me</h2>
-            <p class="font-medium text-sm text-secondary md:text-sm dark:text-white">(Yes, I can read the messages that you send here)</p>
+            <h4 class="font-semibold text-lg text-dark dark:text-tertiarydark mb-2">For further info, collaboration/job offer...</h4>
+            <h2 class="font-bold text-primary text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-primarydark">Contact me</h2>
+            <p class="font-medium text-sm text-dark md:text-sm dark:text-white">(Yes, I can read the messages that you send here)</p>
           </div>
         </div>
         <form name="portfolio-contact-form">
           <div class="w-full lg:w-2/3 lg:mx-auto">
             <div class="w-full px-4 mb-8">
-              <label for="name" class="text-base text-primary font-bold">Name</label>
-              <input type="text" id="name" name="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+              <label for="name" class="text-base text-primary dark:text-primarydark font-bold">Name</label>
+              <input type="text" id="name" name="name" class="mt-2 w-full bg-slate-200 tdark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
             </div>
             <div class="w-full px-4 mb-8">
-              <label for="email" class="text-base text-primary font-bold">Email</label>
-              <input type="text" id="email" name="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+              <label for="email" class="text-base text-primary dark:text-primarydark font-bold">Email</label>
+              <input type="text" id="email" name="email" class="mt-2 w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
             </div>
             <div class="w-full px-4 mb-8">
-              <label for="message" class="text-base text-primary font-bold">Leave a message</label>
-              <textarea type="text" id="message" name="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+              <label for="message" class="text-base text-primary dark:text-primarydark font-bold">Leave a message</label>
+              <textarea type="text" id="message" name="message" class="mt-2 w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
             </div>
             <div class="w-full px-4">
-              <button type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-70 hover:shadow-lg transition duration-500 btn-send">Send</button>
+              <button type="submit" class="text-base font-semibold text-white bg-primary dark:bg-secondarydark dark:text-black py-3 px-8 rounded-full w-full hover:opacity-70 hover:shadow-lg transition duration-500 btn-send">Send</button>
             </div>
             <div class="w-full px-4 flex items-center justify-center text-white invisible">
               <button type="button" class="flex items-center justify-center bg-primary w-full py-3 px-8 rounded-full btn-loading" disabled>
@@ -355,7 +381,7 @@
               <a
                 href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNrdDMmZPzqNcZcgKkMLsqHdRGRwJbSfpSzPfRlcccpPJWFnDDvfJwsSBPCQLQShsLCcwg"
                 target="_blank"
-                class="font-bold text-white bg-primary py-[10px] px-3 rounded-full inline-block hover:shadow-lg hover:bg-white hover:text-primary transition duration-300 ease-in-out"
+                class="font-bold text-white bg-primary dark:bg-tertiarydark dark:text-black dark:hover:bg-secondarydark py-[10px] px-3 rounded-full inline-block hover:shadow-lg hover:bg-white hover:text-primary transition duration-300 ease-in-out"
                 >zmkalila@gmail.com</a
               >
             </p>
@@ -396,7 +422,11 @@
         <div class="w-full pt-10 border-slate-300">
           <div class="flex items-center justify-center mb-4">
             <!-- Github -->
-            <a href="https://github.com/zmkalila" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <a
+              href="https://github.com/zmkalila"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-white dark:hover:bg-secondarydark dark:hover:border-secondarydark dark:hover:text-black"
+            >
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>GitHub</title>
                 <path
@@ -405,7 +435,11 @@
               </svg>
             </a>
             <!-- Kaggle -->
-            <a href="https://kaggle.com/zmkalila" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+            <a
+              href="https://kaggle.com/zmkalila"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-white dark:hover:bg-secondarydark dark:hover:border-secondarydark dark:hover:text-black"
+            >
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Kaggle</title>
                 <path
@@ -417,7 +451,7 @@
             <a
               href="https://www.linkedin.com/in/zayna-mosa-kalila-tf13320045"
               target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-white dark:hover:bg-secondarydark dark:hover:border-secondarydark dark:hover:text-black"
             >
               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>LinkedIn</title>
@@ -437,8 +471,15 @@
     <!-- Footer End -->
 
     <!-- Back to Top Start -->
-    <a href="#home" class="h-12 w-12 bg-primary block rounded-full fixed z-[9999] bottom-5 right-5 p-4 justify-center items-center hover:animate-pulse hidden" id="to-top">
-      <span class="block h-4 w-4 border-t-2 border-l-2 rotate-45 mt-2"></span>
+    <a href="#home" class="h-12 w-12 bg-primary dark:bg-secondarydark rounded-full fixed z-[9999] bottom-5 right-5 p-2 justify-center items-center hover:animate-pulse hidden" id="to-top">
+      <span class="text-white dark:text-black justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+          <path
+            fill-rule="evenodd"
+            d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </span>
     </a>
     <!-- Back to Top End -->
 
@@ -454,11 +495,11 @@
 
     <script>
       gsap.registerPlugin(TextPlugin);
-      gsap.to(".intro1", { duration: 2, delay: 0.5, text: "Hi everyone (●'◡'●), I am...", ease: "sine" });
-      gsap.to(".intro2", { duration: 1, delay: 2.5, text: "Mosa" });
-      gsap.to(".intro3", { duration: 1, delay: 3.5, text: "based in Jakarta/Bandung, ID" });
-      gsap.to(".intro4", { duration: 1, delay: 4.5, text: "Engineering Physics Undergraduate Student," });
-      gsap.to(".intro5", { duration: 1, delay: 5.5, text: "Data Science & Machine Learning Enthusiast." });
+      gsap.to(".intro1", { duration: 1, delay: 0.5, text: "Hi everyone (●'◡'●), I am...", ease: "sine" });
+      gsap.to(".intro2", { duration: 0.5, delay: 1.5, text: "Mosa" });
+      gsap.to(".intro3", { duration: 1, delay: 2, text: "based in Jakarta/Bandung, ID" });
+      gsap.to(".intro4", { duration: 1, delay: 3, text: "Engineering Physics Undergraduate Student," });
+      gsap.to(".intro5", { duration: 1, delay: 4, text: "Data Science & Machine Learning Enthusiast." });
     </script>
   </body>
 </html>
