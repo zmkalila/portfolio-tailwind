@@ -1577,6 +1577,11 @@ body {
   color: rgb(223 189 242 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:text-\[\#613b6f\] {
+  --tw-text-opacity: 1;
+  color: rgb(97 59 111 / var(--tw-text-opacity));
+}
+
 .group:hover .group-hover\:underline {
   text-decoration-line: underline;
 }
