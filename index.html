@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="src\build.css" rel="stylesheet" />
+    <link href="src\output.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
@@ -17,7 +17,7 @@
   <body>
     <!-- items-center utk center vertically, justify-center utk center horizontally -->
     <!-- Header Start -->
-    <header class="bg-secondary dark:bg-darkmode bg-opacity-75 dark:bg-opacity-75 absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="bg-secondary bg-opacity-75 dark:bg-darkmode dark:bg-opacity-75 absolute top-0 left-0 w-full flex items-center z-10">
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
@@ -35,19 +35,19 @@
             >
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">Home</a>
+                  <a href="#home" class="text-base font-medium text-black py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">Home</a>
                 </li>
                 <li class="group">
-                  <a href="#about" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">About me</a>
+                  <a href="#about" class="text-base font-medium text-black py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">About me</a>
                 </li>
                 <li class="group">
-                  <a href="#portfolio" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">Portfolio</a>
+                  <a href="#portfolio" class="text-base font-medium text-black py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">Portfolio</a>
                 </li>
                 <li class="group">
-                  <a href="#blog" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">Blog</a>
+                  <a href="#blog" class="text-base font-medium text-black py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">Blog</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="text-base font-medium text-dark py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">Contact</a>
+                  <a href="#contact" class="text-base font-medium text-black py-2 mx-8 flex group-hover:text-primary group-hover:underline dark:group-hover:text-primarydark dark:text-white">Contact</a>
                 </li>
                 <li class="mt-4 lg:mt-0 flex items-center pl-8">
                   <div class="flex">
@@ -92,25 +92,25 @@
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <div class="coba">
-              <h1 class="text-base font-semibold md:text-xl text inline-block bg-primary dark:bg-darkmode text-white intro1 dark:text-white"></h1>
+              <h1 class="text-base font-semibold md:text-xl text inline-block bg-primary dark:bg-darkmode text-dark intro1 dark:text-white"></h1>
             </div>
             <div class="coba2">
-              <h1 class="font-bold text-4xl mt-1 lg:text-5xl text2 inline-block text-white dark:text-primarydark intro2"></h1>
+              <h1 class="font-bold text-4xl mt-1 lg:text-5xl text2 inline-block text-black dark:text-primarydark intro2"></h1>
             </div>
             <div>
-              <p class="font-light text-white mb-6 leading-relaxed inline-block intro3 bg-primary dark:bg-darkmode dark:text-white"></p>
+              <p class="font-normal sm:text-sm lg:text-base text-slate-700 mb-6 leading-relaxed inline-block intro3 bg-primary dark:bg-darkmode dark:text-white"></p>
             </div>
             <div>
-              <h2 class="font-medium text-white text-lg mb-1 lg:text-2xl inline-block intro4 bg-primary dark:bg-darkmode dark:text-white"></h2>
+              <h2 class="font-medium text-dark text-lg mb-1 lg:text-2xl inline-block intro4 bg-primary dark:bg-darkmode dark:text-white"></h2>
             </div>
             <div>
-              <h2 class="font-medium text-white text-lg mb-12 lg:text-2xl inline-block intro5 bg-primary dark:bg-darkmode dark:text-white"></h2>
+              <h2 class="font-medium text-dark text-lg mb-12 lg:text-2xl inline-block intro5 bg-primary dark:bg-darkmode dark:text-white"></h2>
             </div>
 
             <a
               href="https://drive.google.com/file/d/1F-CA-y4YajTOwe9-pVUaVlYPnRclD-MK/view?usp=drive_link"
               target="_blank"
-              class="text-base lg:text-lg font-semibold inline-block text-black bg-secondary dark:bg-secondarydark py-3 px-3 rounded-full shadow-2xl dark:shadow-2xl hover:opacity-70 transition duration-300 ease-in-out connect"
+              class="z-11 text-base lg:text-lg font-semibold inline-block text-black bg-secondary dark:bg-secondarydark py-3 px-3 rounded-full shadow-2xl dark:shadow-2xl hover:bg-white hover:text-secondary dark:hover:bg-white dark:hover:text-cyan-300 transition duration-200 ease-in-out connect"
               >Take a look at my CV</a
             >
           </div>
@@ -120,10 +120,11 @@
               <span class="absolute bottom-1 left-[50%] -translate-x-1/2 md:scale-110">
                 <svg width="325" height="325" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                   <path
-                    fill="#cbd5e1"
+                    fill="#ffff77"
                     d="M46.5,-69.3C61.4,-62.8,75.5,-51.8,83.2,-37.3C90.9,-22.8,92.2,-4.7,87.6,11.1C83.1,27,72.7,40.5,61.6,53.4C50.5,66.4,38.6,78.7,24.6,82.2C10.5,85.7,-5.7,80.3,-21.4,74.8C-37.1,69.4,-52.3,63.9,-61,53.2C-69.8,42.5,-72.2,26.6,-73.7,11.1C-75.2,-4.5,-75.8,-19.7,-71.3,-33.8C-66.8,-48,-57.3,-61.1,-44.5,-68.7C-31.8,-76.3,-15.9,-78.3,-0.1,-78.2C15.8,-78.1,31.6,-75.9,46.5,-69.3Z"
                     transform="translate(100 100) scale(1.1)"
                   />
+                  <!-- fill #cbd5e1 light grey -->
                 </svg>
               </span>
             </div>
@@ -256,7 +257,7 @@
       <div class="w-full px-4">
         <div class="max-w-3xl mx-auto text-center mb-20">
           <h4 class="font-semibold text-lg text-dark dark:text-white mb-2 porto">Portfolio</h4>
-          <h2 class="font-bold text-primary text-4xl mb-4 portoo dark:text-primarydark">Current Projects</h2>
+          <h2 class="font-bold text-[#613b6f] text-4xl mb-4 portoo dark:text-primarydark">Current Projects</h2>
           <p class="font-medium text-md text-dark portooo lg:max-w-4xl dark:text-white">
             You can access the programming projects—varying from Data Science to Machine Learning—that I have previously worked on by clicking on each card below.
           </p>
@@ -324,29 +325,29 @@
         <div class="w-full px-4 lg:mx-auto">
           <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-dark dark:text-tertiarydark mb-2">For further info, collaboration/job offer...</h4>
-            <h2 class="font-bold text-primary text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-primarydark">Contact me</h2>
+            <h2 class="font-bold text-[#613b6f] text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-primarydark">Contact me</h2>
             <p class="font-medium text-sm text-dark md:text-sm dark:text-white">(Yes, I can read the messages that you send here)</p>
           </div>
         </div>
         <form name="portfolio-contact-form">
           <div class="w-full lg:w-2/3 lg:mx-auto">
             <div class="w-full px-4 mb-8">
-              <label for="name" class="text-base text-primary dark:text-primarydark font-bold">Name</label>
-              <input type="text" id="name" name="name" class="mt-2 w-full bg-slate-200 tdark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+              <label for="name" class="text-base text-[#613b6f] dark:text-primarydark font-bold">Name</label>
+              <input type="text" id="name" name="name" class="mt-2 w-full bg-slate-200 tdark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:border-primary" />
             </div>
             <div class="w-full px-4 mb-8">
-              <label for="email" class="text-base text-primary dark:text-primarydark font-bold">Email</label>
-              <input type="text" id="email" name="email" class="mt-2 w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
+              <label for="email" class="text-base text-[#613b6f] dark:text-primarydark font-bold">Email</label>
+              <input type="text" id="email" name="email" class="mt-2 w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:border-primary" />
             </div>
             <div class="w-full px-4 mb-8">
-              <label for="message" class="text-base text-primary dark:text-primarydark font-bold">Leave a message</label>
-              <textarea type="text" id="message" name="message" class="mt-2 w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
+              <label for="message" class="text-base text-[#613b6f] dark:text-primarydark font-bold">Leave a message</label>
+              <textarea type="text" id="message" name="message" class="mt-2 w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:border-primary h-32"></textarea>
             </div>
             <div class="w-full px-4">
               <button type="submit" class="text-base font-semibold text-white bg-primary dark:bg-secondarydark dark:text-black py-3 px-8 rounded-full w-full hover:opacity-70 hover:shadow-lg transition duration-500 btn-send">Send</button>
             </div>
-            <div class="w-full px-4 flex items-center justify-center text-white invisible">
-              <button type="button" class="flex items-center justify-center bg-primary w-full py-3 px-8 rounded-full btn-loading" disabled>
+            <div class="w-full px-4 flex items-center justify-center text-white hidden">
+              <button type="button" class="flex items-center justify-center bg-primary w-full py-3 px-8 rounded-full btn-loading">
                 <svg class="mr-3 h-5 w-5 animate-spin text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                   <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                   <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
@@ -471,7 +472,7 @@
     <!-- Footer End -->
 
     <!-- Back to Top Start -->
-    <a href="#home" class="h-12 w-12 bg-primary dark:bg-secondarydark rounded-full fixed z-[9999] bottom-5 right-5 p-2 justify-center items-center hover:animate-pulse hidden" id="to-top">
+    <a href="#home" class="h-12 w-12 bg-secondary dark:bg-secondarydark rounded-full fixed z-[9999] bottom-5 right-5 p-2 justify-center items-center hover:animate-pulse hidden" id="to-top">
       <span class="text-white dark:text-black justify-center items-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
           <path

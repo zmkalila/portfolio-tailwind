@@ -10,9 +10,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#aa3333",
-        secondary: "#ffff77",
-        tertiary: "#55ffff",
+        primary: "#dfbdf2", // aa3333 red
+        secondary: "#BBF5AB", // ffff77 yellow
+        tertiary: "#ffff77", // 55ffff cyan
         primarydark: "#ffff77", // ffa200 orange
         secondarydark: "#55ffff", // ff0095 hot pink
         tertiarydark: "#fff", // 0dff00 hijau neon
