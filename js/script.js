@@ -77,3 +77,66 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+
+// new Swiper(".card-wrapper", {
+//   spaceBetween: 30,
+//   loop: true,
+// autoplay: {
+//   delay: 3000, // Auto-slide every 3 seconds
+//   disableOnInteraction: false,
+//   },
+//   pagination: {
+//     el: ".swiper-pagination-bullet",
+//     clickable: true,
+//     dynamicBullets: true,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   breakpoints: {
+//     0: {
+//       slidesPerView: 1,
+//     },
+//     768: {
+//       slidesPerView: 2,
+//     },
+//     1024: {
+//       slidesPerView: 3,
+//     },
+//   },
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".card-wrapper", {
+    loop: true, // Makes it loop infinitely
+    slidesPerView: 1, // Adjust based on your design
+    spaceBetween: 10,
+    autoplay: {
+      delay: 5000, // Auto-slide every 3 seconds
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
+});
