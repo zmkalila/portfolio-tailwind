@@ -192,12 +192,24 @@ body {
   height: 12px;
   width: 12px;
   opacity: 0.5;
-  background: #5372f0;
+  background-color: #5372f0;
 }
 
 .card-wrapper .swiper-pagination-bullet:active {
   opacity: 1;
 } */
+
+/* Default bullet color */
+.swiper-pagination-bullet {
+  @apply bg-[#5372f0] dark:bg-white opacity-75 w-5 h-5;
+  @apply mt-3;
+}
+
+/* Active bullet color */
+.swiper-pagination-bullet-active {
+  @apply bg-[#5372f0] dark:bg-white opacity-100;
+  @apply mt-3;
+}
 
 /* .card-wrapper .swiper-slide-button {
   color: #5372f0;

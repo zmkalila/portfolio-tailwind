@@ -119,6 +119,9 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      dynamicBullets: true,
+      bulletClass: "swiper-pagination-bullet",
+      bulletActiveClass: "swiper-pagination-bullet-active",
     },
     navigation: {
       nextEl: ".swiper-button-next",

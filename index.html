@@ -14,7 +14,7 @@
     <script>
       document.documentElement.classList.toggle("dark", localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches));
     </script>
-    <title>Mosa | Portfolio</title>
+    <title>Portfolio Mosa</title>
   </head>
   <body>
     <!-- items-center utk center vertically, justify-center utk center horizontally -->
@@ -23,7 +23,11 @@
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
-            <a href="#home" class="font-bold text-lg text-black block py-6 dark:text-white">zmkalila</a>
+            <a
+              href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNrdDMmZPzqNcZcgKkMLsqHdRGRwJbSfpSzPfRlcccpPJWFnDDvfJwsSBPCQLQShsLCcwg"
+              class="font-bold text-lg text-black hover:text-[#613b6f] block py-6 dark:text-white dark:hover:text-primarydark"
+              >zmkalila@gmail.com</a
+            >
           </div>
           <div class="flex items-center px-4">
             <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -112,7 +116,7 @@
             <a
               href="https://drive.google.com/file/d/1LFqyh7ba7ldZBlz4witZbHZkHIK29QrS/view?usp=sharing"
               target="_blank"
-              class="z-20 text-base lg:text-lg font-semibold inline-block text-black bg-secondary dark:bg-secondarydark py-3 px-3 rounded-full shadow-2xl hover:bg-white hover:text-secondary dark:hover:bg-white dark:hover:text-cyan-300 transition duration-200 ease-in-out connect"
+              class="z-20 text-base lg:text-lg font-semibold inline-block text-black bg-secondary dark:bg-secondarydark py-3 px-3 rounded-full shadow-2xl hover:bg-white hover:text-secondary dark:hover:bg-white dark:hover:text-cyan-500 transition duration-200 ease-in-out connect"
               >Take a look at my CV</a
             >
           </div>
@@ -149,8 +153,8 @@
             <p class="mb-4 text-dark max-w-xl lg:text-lg font-bold bg-secondary dark:text-black dark:bg-primarydark py-1 px-1 rounded-sm inline-block">Python, HTML, CSS, MySQL.</p>
             <p class="font-medium text-base text-dark max-w-xl lg:text-lg dark:text-white">Foreign Languages:</p>
             <p class="text-dark max-w-xl lg:text-lg font-bold bg-secondary dark:text-black dark:bg-primarydark py-1 px-1 rounded-sm inline-block">
-              Indonesian, English <span class="text-dark max-w-xl lg:text-lg font-light dark:text-black">(Upper Intermediate)</span>,
-              <a href="https://drive.google.com/file/d/1epXd6nB9STgY4NLdpg8uguYbgzBxFwfx/view" target="_blank" class="hover:underline">Korean <span class="text-dark max-w-xl lg:text-lg font-light dark:text-black">(Beginner)</span></a
+              Indonesian, English <span class="text-dark max-w-xl lg:text-lg font-normal dark:text-black">(Upper Intermediate)</span>,
+              <a href="https://drive.google.com/file/d/1epXd6nB9STgY4NLdpg8uguYbgzBxFwfx/view" target="_blank">Korean <span class="text-blue-700 max-w-xl lg:text-lg font-normal hover:underline">(TOPIK I - 2급)</span></a
               >.
             </p>
           </div>
@@ -270,14 +274,16 @@
         </div>
       </div>
       <div class="container-carousel flex items-center justify-items-center swiper mx-auto px-10 lg:max-w-7xl md:max-w-5xl sm:max-w-3xl">
-        <div class="card-wrapper max-w-[1100px] mt-0 mx-10 mb-4 overflow-hidden sm:mt-0 sm:mx-2 sm:mb-6">
+        <div class="card-wrapper max-w-[1100px] mt-0 mx-10 mb-8 overflow-hidden sm:mt-0 sm:mx-2 sm:mb-6">
           <ul class="card-list swiper-wrapper">
             <li class="card-item swiper-slide">
               <div class="rounded-xl shadow-lg overflow-hidden mt-8 sm:mt-0 sm:w-64 md:w-72 lg:w-80 xl:w-[350px] bg-white dark:text-white">
                 <a href="https://zmkalila.github.io/landing-page-bootstrap-v5.0/" target="_blank" class="card-link active:cursor-grabbing">
                   <img src="img/portfolio/1.jpg" alt="Illustration" class="card-image w-full inline-block" />
                   <div class="px-6 py-4">
-                    <p href="#" target="_blank" class="z-20 mt-1 mb-1 text-xs text-justify inline-block bg-yellow-200 text-yellow-800 py-2 px-2 rounded-full hover:opacity-85 transition duration-200 ease-in-out connect">Web Development</p>
+                    <p href="#" target="_blank" class="z-20 mt-1 mb-1 text-xs text-justify inline-block bg-yellow-200 text-yellow-800 py-2 px-2 rounded-full hover:opacity-85 transition duration-200 ease-in-out connect">
+                      Website Development
+                    </p>
                     <div class="card-title font-bold text-lg mt-2 mb-2 text-slate-700">Landing Page with Bootstrap 5</div>
                     <p class="text-sm text-slate-600 text-justify">
                       Another attempt on making a landing page for my personal portfolio website, only this time using Bootstrap v5.0. (p.s.: still static and unfinished, but already responsive)
@@ -381,7 +387,7 @@
           <a href="https://zmkalila.github.io/landing-page-bootstrap-v5.0/" target="_blank">
             <img src="img/portfolio/1.jpg" alt="Illustration" class="w-full inline-block" />
             <div class="px-6 py-4">
-              <p href="#" target="_blank" class="z-20 mt-1 mb-1 text-xs text-justify inline-block bg-yellow-200 text-yellow-800 py-2 px-2 rounded-full hover:opacity-85 transition duration-200 ease-in-out connect">Web Development</p>
+              <p href="#" target="_blank" class="z-20 mt-1 mb-1 text-xs text-justify inline-block bg-yellow-200 text-yellow-800 py-2 px-2 rounded-full hover:opacity-85 transition duration-200 ease-in-out connect">Website Development</p>
               <div class="font-bold text-lg mt-2 mb-2 text-slate-700">Landing Page with Bootstrap 5</div>
               <p class="text-sm text-slate-600 text-justify">Another attempt on making a landing page for my personal portfolio website, only this time using Bootstrap v5.0. (p.s.: still static and unfinished, but already responsive)</p>
               <p class="text-sm text-slate-600 text-justify mt-4 lg:mt-3 bottom-0 font-bold">Tools: HTML, CSS.</p>
@@ -529,7 +535,7 @@
               <a
                 href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNrdDMmZPzqNcZcgKkMLsqHdRGRwJbSfpSzPfRlcccpPJWFnDDvfJwsSBPCQLQShsLCcwg"
                 target="_blank"
-                class="font-bold text-white bg-primary dark:bg-tertiarydark dark:text-black dark:hover:bg-secondarydark py-[10px] px-3 rounded-full inline-block hover:shadow-lg hover:bg-white hover:text-primary transition duration-300 ease-in-out"
+                class="font-bold text-white bg-primary dark:hover:bg-tertiarydark dark:hover:text-cyan-500 dark:text-black dark:bg-secondarydark py-[10px] px-3 rounded-full inline-block hover:shadow-lg hover:bg-white hover:text-primary transition duration-300 ease-in-out"
                 >zmkalila@gmail.com</a
               >
             </p>
@@ -567,7 +573,7 @@
           </div>
         </div>
 
-        <div class="w-full pt-2 mb-4 border-slate-300">
+        <div class="w-full pt-2 mb-3 border-slate-300">
           <div class="flex items-center justify-center mb-4">
             <!-- Github -->
             <a
