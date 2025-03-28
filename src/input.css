@@ -8,6 +8,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
+@theme {
+  --breakpoint-xs: 30rem;
+}
+
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
@@ -216,7 +220,7 @@ body {
   margin-top: -35px;
 } */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 480px) {
   .card-wrapper {
     margin: 0 10px 25px;
   }

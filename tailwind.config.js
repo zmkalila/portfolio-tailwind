@@ -21,7 +21,7 @@ module.exports = {
       },
       screens: {
         "2xl": "1320px",
-        ipad: "960px",
+        xs: "480px",
       },
     },
   },
