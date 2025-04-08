@@ -22,6 +22,11 @@ module.exports = {
       screens: {
         "2xl": "1320px",
         xs: "480px",
+        // lgxl: "1024px",
+        // xltoxxl: "1280px",
+        // "xs-to-sm": "560px",
+        // "sm-to-md": "704px",
+        // "md-to-lg": "896px",
       },
     },
   },
